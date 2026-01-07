@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="farmhouse.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmhouse Booking</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Green Valley Farmhouse</h1>
+    <p>Book your peaceful stay with nature 🌿</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Booking Form</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="phone">Mobile Number:</label><br>
+          <input type="tel" id="phone" name="phone"
+                 pattern="[0-9]{10}" 
+                 placeholder="10-digit number"
+                 required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Booking Details</legend>
+
+          <label for="checkin">Check-in Date:</label><br>
+          <input type="date" id="checkin" name="checkin" required><br><br>
+
+          <label for="checkout">Check-out Date:</label><br>
+          <input type="date" id="checkout" name="checkout" required><br><br>
+
+          <label for="guests">Number of Guests:</label><br>
+          <input type="number" id="guests" name="guests" min="1" max="20" required><br><br>
+
+          <label for="purpose">Purpose of Visit:</label><br>
+          <select id="purpose" name="purpose" required>
+            <option value="">-- Select --</option>
+            <option value="family">Family Stay</option>
+            <option value="party">Party</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="photoshoot">Photoshoot</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Requests</legend>
+
+          <label for="message">Special Requirements:</label><br>
+          <textarea id="message" name="message" rows="4"
+                    placeholder="Food, decorations, music, etc."></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Book Now</button>
+
+      </form>
+    </section>
+
+  </main>
+
+    <section>
+  <h3>Need Help?</h3>
+  <p>Chat with us directly on WhatsApp for instant booking assistance.</p>
+
+  <a href="https://wa.me/918919100257?text=Hi%20I%20am%20interested%20in%20booking%20the%20farmhouse"
+     target="_blank">
+    <button type="button">Chat on WhatsApp</button>
+  </a>
+</section>
+
+  <footer>
+    <p>© 2026 Green Valley Farmhouse | Contact: +91 89191 00257</p>
+  </footer>
+
+
+</body>
+</html>
